@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEditorLib", "FileEditor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerstConsoleEditor", "TerstConsoleEditor\TerstConsoleEditor.csproj", "{20BC40BA-FC38-4527-BDD0-4B9119F5FE0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLib", "ConsoleLib\ConsoleLib.csproj", "{951C0AE0-0148-4C30-A6C1-B50508BAE3C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{20BC40BA-FC38-4527-BDD0-4B9119F5FE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20BC40BA-FC38-4527-BDD0-4B9119F5FE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20BC40BA-FC38-4527-BDD0-4B9119F5FE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{951C0AE0-0148-4C30-A6C1-B50508BAE3C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{951C0AE0-0148-4C30-A6C1-B50508BAE3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{951C0AE0-0148-4C30-A6C1-B50508BAE3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{951C0AE0-0148-4C30-A6C1-B50508BAE3C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
