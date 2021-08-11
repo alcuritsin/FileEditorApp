@@ -1,5 +1,7 @@
-﻿using System;
-using FileEditorLib;
+﻿using FileEditorLib;
+
+using static System.Console;
+using static ConsoleLib.ConsoleEx;
 
 namespace TerstConsoleEditor
 {
@@ -12,10 +14,10 @@ namespace TerstConsoleEditor
             IFileWorking file = null;
             Document document = null;
             
-            Console.WriteLine("Выберите тип файла для открытия:");
-            Console.WriteLine("1. TXT");
-            Console.WriteLine("2. MD");
-            var select = Console.ReadLine();
+            WriteLine("Выберите тип файла для открытия:");
+            WriteLine("1. TXT");
+            WriteLine("2. MD");
+            var select = ReadLine();
             switch (select)
             {
                 case "1":
@@ -31,34 +33,6 @@ namespace TerstConsoleEditor
             document = file.Open(path);
             
             Show(document);
-        }
-
-        static void Show(Document document)
-        {
-            var type = document.GetType().FullName;
-            switch (type)
-            {
-                case "FileEditorLib.MdDocument":
-                    ShowMd(document);
-                    break;
-                case "FileEditorLib.TxtDocument":
-                    ShowTxt(document);
-                    break;
-            }
-        }
-
-        static void ShowTxt(Document document)
-        {
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine(document.Content);
-            Console.ResetColor();
-        }
-        
-        static void ShowMd(Document document)
-        {
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine(document.Content);
-            Console.ResetColor();
         }
     }
 }

@@ -6,6 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ConsoleLib\ConsoleLib.csproj" />
       <ProjectReference Include="..\FileEditorLib\FileEditorLib.csproj" />
     </ItemGroup>
 
